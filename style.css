@@ -20,7 +20,7 @@ body{
 .my-pic-div{
     display: inline-block;
     height: 100% ; 
-    border: 1px solid rgb(61, 61, 61);
+    border: solid 0.5px rgb(200, 200, 200);
     border-radius: 10px;
    
     
@@ -75,4 +75,118 @@ body{
 }
 .address i{
     margin-right: 3px;
+}
+.body-main-div{
+    display: flex;    /* controls content width */
+    margin: 0 auto;        /* centers content */    
+    margin-top: 2%;
+    height: auto;
+    gap: 15px;
+    
+
+}
+.body-info-div{
+    border: solid 0.5px rgb(200, 200, 200);
+    height: auto;
+    border-radius: 20px;
+    flex: 1;
+    padding: 15px;
+}
+.skills-main-div{
+    height: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.tech-skills-main-div{
+    border: solid 0.5px rgb(200, 200, 200);
+    height: auto;
+    border-radius: 20px;
+    padding: 15px;
+}
+.personal-skills-main-div{
+    border: solid 0.5px rgb(200, 200, 200);
+    height: 40%;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+@media (max-width: 550px) {
+    .body-main-div{
+        height: 600px;
+        flex-direction: column;
+    }
+   
+}
+.about-text{
+    font-size: clamp(15px, 6vw, 15px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-text i{
+    font-size: 15px;
+}
+.about-me-details{
+    font-size: 15px;
+    line-height: 27px;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;   /* includes padding in width */
+    word-wrap: break-word;    /* breaks long words */
+    overflow-wrap: break-word;/
+   
+}
+.tech-skills-text{
+    font-size: clamp(15px, 6vw, 15px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tech-skills-text i{
+    font-size: 15px;
+}
+.frontend-text{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(62, 62, 62);
+}
+.frontend-skills-div{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 5px;
+}
+.frontend-skills-div span{
+    border: solid 0.5px rgb(219, 219, 219);
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.embedded-text{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(62, 62, 62);
+}
+.embedded-skills-div{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 5px;
+}
+.embedded-skills-div span{
+    border: solid 0.5px rgb(219, 219, 219);
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.personal-skills-text i{
+    font-size: 15px;
+    margin-right: 5px;
+}
+.personal-skills-text{
+    font-size: clamp(15px, 6vw, 15px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.personal-skills-span-div span{
+    border: solid 0.5px rgb(219, 219, 219);
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
