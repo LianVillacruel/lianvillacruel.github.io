@@ -2,53 +2,67 @@ body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+  
+}
+.page-header{
+   background-color: rgb(250, 250, 250);
+   border-bottom: solid 0.2px rgb(208, 208, 208);
+   display: flex;
+   justify-content: center;
+   height: 190px;
+    display: flex;
+    gap: 18px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    
    
 }
 .page {
-    max-width: 900px;     /* controls content width */
+    max-width: 950px;     /* controls content width */
     margin: 0 auto;        /* centers content */
-    padding: 40px 20px;    /* space from screen edges */
+    padding: 0px 20px;    /* space from screen edges */
 }
 
 .header{
-    height: 170px;
+    height: 150px;
     display: flex;
-    gap: 22px;
+    gap: 18px;
     align-items: flex-start;
-   
+    margin-bottom: 3%;
+
   
 }
 .my-pic-div{
     display: inline-block;
     height: 100% ; 
-    border: solid 0.5px rgb(200, 200, 200);
+    border: solid 0.5px rgb(224, 224, 224);
     border-radius: 10px;
    
     
 }
 .my-pic{
     height: 100%;
-    width: 150px;
+    width: 180px;
     object-fit: cover;
     
 }
 .my-info{
-    display: inline-block;
-    width: 500px;
+    width: auto;
     vertical-align: top;
     height: 93%;
-    padding-top: 15px;
+    padding-top: 10px;
+    
     
 }.name,.address,.position{
     margin: 0;
-    line-height: 25px;
+    width: auto;
     
 }
 .name{
-    font-size: clamp(16px, 6vw, 40px);
+    font-size: clamp(9px, 5.5vw, 40px);
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -56,7 +70,7 @@ body{
     
 }   
 .address{
-   font-size: clamp(11px, 3vw, 14px);
+   font-size: clamp(9px, 2.5vw, 14px);
     margin-bottom: 15px;
     color: rgb(45, 45, 45);
     font-family: Arial, Helvetica, sans-serif;
@@ -68,7 +82,7 @@ body{
 
 }
 .position{
-    font-size: clamp(12px, 3vw, 19px);
+    font-size: clamp(8px, 2.5vw, 17px);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500 ;
     color: rgb(58, 58, 58);
@@ -82,15 +96,15 @@ body{
     margin: 0 auto;        /* centers content */    
     margin-top: 2%;
     height: auto;
-    gap: 15px;
+    gap: 1%;
     
 
 }
 .body-info-div{
-    border: solid 0.5px rgb(200, 200, 200);
+    border: solid 0.5px rgb(216, 216, 216);
     height: auto;
     border-radius: 20px;
-    flex: 1;
+    flex: 2;
     padding: 15px;
 }
 .skills-main-div{
@@ -98,20 +112,16 @@ body{
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 2%;
+   
     
 }
 .tech-skills-main-div{
-    border: solid 0.5px rgb(200, 200, 200);
-    height: auto;
+    border: solid 0.5px rgb(216, 216, 216);
+    height: 100%;
     border-radius: 20px;
     padding: 15px;
-}
-.personal-skills-main-div{
-    border: solid 0.5px rgb(200, 200, 200);
-    height: 40%;
-    border-radius: 20px;
-    padding: 15px;
+   background-color: rgb(250, 250, 250);
 }
 
 @media (max-width: 550px) {
@@ -140,6 +150,7 @@ body{
 .tech-skills-text{
     font-size: clamp(15px, 6vw, 15px);
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 .tech-skills-text i{
     font-size: 15px;
@@ -148,11 +159,13 @@ body{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(62, 62, 62);
+    margin-top: 0;
 }
 .frontend-skills-div{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
 }
 .frontend-skills-div span{
     border: solid 0.5px rgb(219, 219, 219);
@@ -169,6 +182,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
 }
 .embedded-skills-div span{
     border: solid 0.5px rgb(219, 219, 219);
@@ -176,18 +190,20 @@ body{
     border-radius: 5px;
     font-size: 12px;
 }
-.personal-skills-text i{
-    font-size: 15px;
-    margin-right: 5px;
-}
-.personal-skills-text{
-    font-size: clamp(15px, 6vw, 15px);
+.tools-skill-text{
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(62, 62, 62);
 }
-.personal-skills-span-div span{
+.tools-skills-div{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.tools-skills-div span{
     border: solid 0.5px rgb(219, 219, 219);
     padding: 3px 6px;
     border-radius: 5px;
     font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
 }
