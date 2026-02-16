@@ -1,329 +1,317 @@
-body{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #f8f9fb ;
 }
-.page-header{
-   background-color: rgb(250, 250, 250);
-   border-bottom: solid 0.2px rgb(208, 208, 208);
-   display: flex;
-   height: 200px;
-    display: flex;
-    padding-bottom: 1%;
-    padding-top: 2%;
-    
-}
-.header{
-    display: flex;
-    width: 950px; 
-    gap: 2%;
-    margin: 0 auto; 
-    
-    
-}
-.my-pic-div{
-    display: flex;
-    padding: 5px;
-   
-    
-}
-.my-pic{
-    height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    border: solid 0.5px rgb(214, 214, 214);
-    border-radius: 50%;
-    aspect-ratio: 1/1;
-    object-position: center;
-   
-    
-}
-.my-info{
-    width: auto;
-    vertical-align: top;
-    height: 93%;
-    padding-top: 10px;
-    
-    
-}.name,.address,.position{
-    margin: 0;
-    width: auto;
-    
-}
-.name{
-    font-size: clamp(9px, 5.5vw, 40px);
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-bottom: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    
-}   
-.address{
-   font-size: clamp(9px, 2.5vw, 14px);
-    margin-bottom: 15px;
-    color: rgb(45, 45, 45);
-    font-family: Arial, Helvetica, sans-serif;
-     white-space: nowrap;      /* DO NOT wrap */
-    overflow: hidden;         /* prevent overlap */
-    text-overflow: ellipsis;  /* optional ... */
-
-    line-height: 1.2;
-
-}
-.position{
-    font-size: clamp(8px, 2.5vw, 17px);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500 ;
-    color: rgb(58, 58, 58);
-
-}
-.address i{
-    margin-right: 3px;
-}
+/*======= Whole Page CSS =======*/
 .page {
-    max-width: 950px;     /* controls content width */
-    margin: 0 auto;        /* centers content */
-    padding: 0px 20px;    /* space from screen edges */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  max-width: 1100px; /* controls content width */
+  margin: 0 auto 100px auto; /* centers content */
+  padding: 0; /* space from screen edges */
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fb;
+  gap: 15px;
 }
-.body-first-div{
-    display: flex;    /* controls content width */
-    margin: 0 auto;        /* centers content */    
-    margin-top: 2%;
-    height: auto;
-    gap: 1%;
-    
+.section-heading-txt {
+  font-size: clamp(12px, 5.5vw, 16px);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111827
+}
+.section-heading-txt i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+/*=== Hero Section ===*/
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0 10vh 0;
+}
+.profile-pic {
+  max-width: 180px;
+  max-height: 180px;
+  height: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: solid 0.5px rgb(133, 133, 133);
+  margin: 0 0 2vh 0;
+}
+.hero-intro-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.name-txt {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: clamp(30px, 5.5vw, 50px);
+  font-weight: lighter;
+  margin: 0;
+}
+.location-txt {
+  margin: 1vh 0;
+  font-size: clamp(9px, 5.5vw, 16px);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 58, 58);
+}
+.location-txt i {
+  margin-right: 7px;
+}
+.role-txt {
+  margin: 2vh 0;
+  font-size: clamp(8px, 5.5vw, 20px);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 58, 58);
+}
+/*===== Content first main div ======*/
+.content-first-main-div {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+.about-me-div {
+  background-color: rgb(255, 255, 255);
+  flex: 4;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 0.5px rgb(229, 229, 229);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.about-me-div p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(8px, 5.5vw, 15px);
+  line-height: 25px;
+  color: #4B5563 ;
+}
+.tech-skills-div {
+  background-color: white;
+  flex: 2;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 0.5px rgb(229, 229, 229);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
 
+.skills-txt {
+  font-size: 15px;
 }
-.body-info-div{
-    border: solid 0.5px rgb(216, 216, 216);
-    height: auto;
-    border-radius: 20px;
-    flex: 2;
-    padding: 15px;
+.skills-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(8px, 5.5vw, 15px);
+  color: rgb(72, 72, 72);
 }
-.skills-main-div{
-    height: auto;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2%;
-   
-    
+.skills-span-div {
+  display: flex;
+  gap: 2%;
 }
-.tech-skills-main-div{
-    border: solid 0.5px rgb(216, 216, 216);
-    height: 100%;
-    border-radius: 20px;
-    padding: 15px;
-   background-color: rgb(250, 250, 250);
-}
-
-.about-text{
-    font-size: clamp(15px, 6vw, 15px);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.about-text i{
-    font-size: 15px;
-}
-.about-me-details{
-    font-size: 15px;
-    line-height: 27px;
-    font-family:Arial, Helvetica, sans-serif;
-    box-sizing: border-box;   /* includes padding in width */
-    word-wrap: break-word;    /* breaks long words */
-    overflow-wrap: break-word;/
-   
-}
-.tech-skills-text{
-    font-size: clamp(15px, 6vw, 15px);
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-.tech-skills-text i{
-    font-size: 15px;
-}
-.frontend-text{
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(62, 62, 62);
-    margin-top: 0;
-}
-.frontend-skills-div{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-}
-.frontend-skills-div span{
-    border: solid 0.5px rgb(219, 219, 219);
-    padding: 3px 6px;
-    border-radius: 5px;
-    font-size: 12px;
-}
-.embedded-text{
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(62, 62, 62);
-}
-.embedded-skills-div{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-}
-.embedded-skills-div span{
-    border: solid 0.5px rgb(219, 219, 219);
-    padding: 3px 6px;
-    border-radius: 5px;
-    font-size: 12px;
-}
-.tools-skill-text{
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(62, 62, 62);
-}
-.tools-skills-div{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-}
-.tools-skills-div span{
-    border: solid 0.5px rgb(219, 219, 219);
-    padding: 3px 6px;
-    border-radius: 5px;
-    font-size: 12px;
-}
-.bg-and-exp-text{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-.bg-and-exp-text i{
-    font-size: clamp(15px, 6vw, 15px);
-}
-.experience-main-list-body{
-   display: flex;
-   flex-direction: column;
-   gap: 1rem;
-}
-.experience-list-parent{
-  padding: 7px;
+.skills-span-div span {
+  border: solid 0.5px rgb(229, 229, 229);
+  padding: 5px 12px;
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 12px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* ====== Content second main div ======*/
+.content-second-main-div {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+.second-div-left {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.second-div-right {
+  flex: 2;
+  padding: 20px;
+  border: solid 0.5px rgb(229, 229, 229);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.experience-main-list-div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.experience-list-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.experience-list-child h3 {
+  margin: 0;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.experince-list-childs{
-    display: flex;
-    justify-content: space-between;
-    
+.exp-year {
+  margin: 0;
+  border: solid 0.5px rgb(138, 138, 138);
+  padding: 2px 12px;
+  border-radius: 20px;
+  font-size: 12px;
 }
-.experince-list-childs h3, p{
-    margin: 0;
-    
+.exp-details {
+  margin: 0;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4B5563 ;
 }
-.experince-list-childs p{
-    border: solid 0.5px rgb(124, 124, 124);
-    padding: 3px 5px;
-    border-radius: 10px;
-    font-size: 10px;
-    height: 10px;
-    
+.second-div-left-upper {
+  padding: 20px;
+  background-color: white;
+  border: solid 0.5px rgb(229, 229, 229);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
-.exp-caption{
-    margin: 0;
-    color: rgb(64, 64, 64);
+.project-card-main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.body-second-div{
-    display: flex;
-    gap: 10px;
-    height: auto;
+.projects-card-main-div-upper,
+.projects-card-main-div-lower {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
-.second-div-left{
-    flex: 2;
-    border: solid 0.5px rgb(216, 216, 216);
-    padding: 15px;
-    border-radius: 20px;
-    font-size: 10px;
-    
+.projects-card {
+  flex: 1;
+  border: solid 0.5px rgb(229, 229, 229);
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s;
 }
-.second-div-right{
-    flex: 4;
-    display: flex;
+.projects-card:hover {
+  background-color: rgb(232, 232, 232);
+  transform: scale(1.05);
+}
+.projects-card h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(8px, 5.5vw, 18px);
+  margin: 0;
+}
+.projects-card p {
+  margin: 3px 0 15px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(58, 58, 58);
+  font-size: clamp(8px, 5.5vw, 13px);
+}
+.project-tech-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.project-tech-stack span {
+  border: solid 0.5px rgb(229, 229, 229);
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  background-color: rgb(50, 50, 50);
+  color: #f8f9fb;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.second-div-left-lower {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.academics-main-div {
+  background-color: white;
+  flex: 3;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 0.5px rgb(229, 229, 229);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.SY-acads-cards {
+  padding: 15px;
+  border: solid 0.5px rgb(229, 229, 229);
+  border-radius: 10px;
+}
+.school-year-level {
+  margin: 0;
+  font-size: clamp(11px, 5.5vw, 15px);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.school-name {
+  margin: 0;
+  font-size: clamp(8px, 5.5vw, 12px);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(72, 72, 72);
+}
+.acads-details {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(10px, 5.5vw, 14px);
+  line-height: 20px;
+  color: #4B5563 ;
+}
+
+.beyond-coding-main-div {
+  background-color: white;
+  flex: 2;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 0.5px rgb(229, 229, 229);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.beyond-coding-main-div p {
+  font-size: clamp(10px, 5.5vw, 14px);
+  line-height: 22px;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+    color: #4B5563 ;
+}
+footer{
+  text-align: center;
+  border-top: solid 0.5px rgb(229, 229, 229);
+  color: rgb(82, 82, 82);
+  font-size: 15px;
+  padding: 2% 0 1% 0;
+}
+/*======== Responsiveness =======*/
+@media (max-width: 740px) {
+  .page {
+    padding: 0 10px;
+  }
+  .content-first-main-div,
+  .content-second-main-div {
     flex-direction: column;
     gap: 10px;
-}
-.second-div-right-upper{
-    flex: 1;
-    border: solid 0.5px rgb(216, 216, 216);
-    padding: 15px;
-    border-radius: 20px;
-
-}
-
-@media (max-width: 580px) {
-    .body-first-div{
-        flex-direction: column;
-        height: auto;
-        gap: 10px;
-    }
-   .body-second-div{
-        flex-direction: column;
-        height: auto;
-        gap: 10px;
-   }
-}
-.jhs-acads{
-  background-color: rgb(250, 250, 250);
-  border: solid 0.5px rgb(186, 186, 186);
-  padding: 7px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;    
-}
-.acads-text{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(15px, 6vw, 15px);
-}
-.acads-text i {
-    font-size: clamp(15px, 6vw, 15px);
-
-}
-.jhs-text{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    font-size: 14px;
-
-}
-.school-text{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    font-size: 10px;
-    color: rgb(106, 106, 106);
-}
-.achievements{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-
-}
-
-.second-div-right-lower{
-    flex: 1;
-    border: solid 0.5px rgb(216, 216, 216);
-    padding: 15px;
-    border-radius: 20px;
-}
-
-.projects-text{
-    font-size: clamp(15px, 6vw, 15px);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.projects-text i {
-    margin-right: 4px;
+  }
+  .content-second-main-div {
+    gap: 10px;
+    flex-direction: column-reverse;
+  }
+  .second-div-left-lower {
+    flex-direction: column;
+  }
+  .projects-card-main-div-upper {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
