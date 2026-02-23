@@ -17,193 +17,212 @@
   </head>
 
   <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a
+            ><img
+              src="/Pictures/arrow_forward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+          /></a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#_About">About</a></li>
+        <li><a href="#_Skills">Skills</a></li>
+        <li><a href="#_Projects">Projects</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" class="name-logo"><span>L</span>ian</a>
+        </li>
+        <li class="hideOnMobile"><a href="#_About">About</a></li>
+        <li class="hideOnMobile"><a href="#_Skills">Skills</a></li>
+        <li class="hideOnMobile"><a href="#_Projects">Projects</a></li>
+        <li class="hideOnMobile"><a href="#">Academics</a></li>
+        <li class="hideOnMobile"><a href="#">Contacts</a></li>
+        <li onclick="showSidebar()" class="menu-btn">
+          <a
+            ><img
+              src="/Pictures/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+          /></a>
+        </li>
+      </ul>
+    </nav>
     <div class="page">
       <div class="hero-section">
-        <div class="pic-div">
+        <div class="hero-content">
           <img
-            src="Pictures/831673b3-a6ed-4dee-b509-2a6d5c912b7d-removebg-preview.png"
             class="profile-pic"
+            src="Pictures/831673b3-a6ed-4dee-b509-2a6d5c912b7d-removebg-preview.png"
           />
-        </div>
-
-        <div class="hero-intro-texts">
-          <h1 class="name-txt">Lian Villacruel</h1>
-          <p class="location-txt">
-            <i class="fa-solid fa-location-dot"></i>Camarines Norte, Philippines
-          </p>
           <p class="role-txt">Aspiring Web Developer / Arduino Robotics</p>
-        </div>
-      </div>
-      <div class="content-first-main-div">
-        <div class="about-me-div">
-          <h3 class="section-heading-txt">
-            <i class="fas fa-user"></i>About Me
-          </h3>
-          <div>
-            <p>
-              I’m a 16-year-old aspiring web developer focused on creating
-              interactive and user-friendly web experiences. This website is my
-              second portfolio project and represents an important step in my
-              journey into web development. It reflects not only my current
-              skills but also my commitment to continuous improvement and growth
-              in this field.
-              <br />
-              <br />
-              I also have a background in electronics and robotics, which has
-              helped me develop strong problem-solving skills and a creative
-              mindset. Working with hardware and systems has trained me to think
-              logically, troubleshoot efficiently, and approach challenges with
-              patience and precision.
-              <br />
-              <br />
-              Although web development is my main focus, my experience in
-              robotics continues to influence how I approach projects. It
-              inspires me to build with structure, functionality, and innovation
-              in mind. I am passionate about learning, exploring new
-              technologies, and continuously improving my skills, with the goal
-              of building meaningful and impactful web applications in the
-              future.
-            </p>
-          </div>
-        </div>
-        <div class="tech-skills-div">
-          <div>
-            <h3 class="section-heading-txt">
-              <i class="fas fa-code"></i>Tech Skills
-            </h3>
-          </div>
-          <div>
-            <h3 class="skills-name">Frontend</h3>
-            <div class="skills-span-div">
-              <span class="skills-span-div">HTML</span>
-              <span class="skills-span-div">CSS</span>
-            </div>
-          </div>
-          <div>
-            <h3 class="skills-name">Embedded</h3>
-            <div class="skills-span-div">
-              <span class="skills-span-div">Arduino</span>
-              <span class="skills-span-div">C++</span>
-            </div>
-          </div>
-          <div>
-            <h3 class="skills-name">Tools</h3>
-            <div class="skills-span-div">
-              <span class="skills-span-div">GitHub</span>
-              <span class="skills-span-div">VScode</span>
-            </div>
+          <h1 class="name-txt">Lian Villacruel</h1>
+          <p class="intro-txt">
+            I’m a student web developer learning to build clean and responsive
+            websites using modern web technologies.
+          </p>
+          <div class="CTA-btns">
+            <a href="#_Projects"
+              ><button class="view-project-btn">View Projects</button></a
+            >
+            <button class="get-touch-btn">Get in Touch</button>
           </div>
         </div>
       </div>
-      <div class="content-second-main-div">
-        <div class="second-div-left">
-          <div class="second-div-left-upper">
-            <h3 class="section-heading-txt">
-              <i class="fas fa-folder-open"></i>Projects
-            </h3>
-            <div class="project-card-main-div">
-              <div class="projects-card-main-div-upper">
-                <a
-                  class="projects-card"
-                  href="https://lianvillacruel.github.io/seismoguard-landing-page/"
-                  target="_blank"
-                >
-                  <div>
-                    <div class="project-title-grp">
-                      <h3>SeismoGuard</h3>
-                      <i class="fas fa-arrow-right"></i>
-                    </div>
-
-                    <p>Landing page for SeismoGuard device</p>
-                    <div class="project-tech-stack">
-                      <span>HTML</span>
-                      <span>CSS</span>
-                      <span>JavaScript</span>
-                    </div>
-                  </div>
-                </a>
-
-                <div class="projects-card">
-                  <h3>Waiting for next project...</h3>
-                </div>
-              </div>
-              <div class="projects-card-main-div-lower"></div>
-            </div>
-          </div>
-          <div class="second-div-left-lower">
-            <div class="academics-main-div">
-              <h3 class="section-heading-txt">
-                <i class="fas fa-graduation-cap"></i>Academics
-              </h3>
-              <div class="SY-acads-cards">
-                <h3 class="school-year-level">
-                  Junior High School (2025 - 2026)
-                </h3>
-                <p class="school-name">
-                  Labo Science and Technology High School
-                </p>
-                <div class="acads-details">
-                  <ul>
-                    <li>Active member of the Robotics Club</li>
-                    <li>
-                      Awarded Consecutive Best in Electronics and Robotics
-                      (Grade 10)
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="beyond-coding-main-div">
-              <h3 class="section-heading-txt">
-                <i class="fas fa-book-open"></i> Beyond Coding
-              </h3>
+      <section class="about-main-div" id="_About">
+        <div class="about-content">
+          <h2 class="heading-txts">About</h2>
+          <div class="about-content-main-div">
+            <div class="about-content-left">
               <p>
-                Beyond coding, I’m passionate about continuous learning and
-                self-improvement. I enjoy exploring new ideas, understanding how
-                things work, and challenging myself to think more critically and
-                creatively. I value discipline, growth, and building skills that
-                help me become not just a better developer, but a better
-                problem-solver overall.
+                I’m a 16-year-old aspiring web developer passionate about
+                creating interactive and user-friendly web experiences. This is
+                my second portfolio project, marking an important step in my
+                growth and commitment to continuously improving my skills.
+              </p>
+              <br />
+              <p>
+                With a background in electronics and robotics, I’ve developed
+                strong problem-solving abilities and a logical, creative
+                mindset. While web development is my main focus, my experience
+                in robotics influences how I build—prioritizing structure,
+                functionality, and innovation. I’m driven to keep learning and
+                aim to create meaningful, impactful web applications in the
+                future.
               </p>
             </div>
-          </div>
-        </div>
-        <div class="second-div-right">
-          <h3 class="section-heading-txt">
-            <i class="fas fa-briefcase"></i>Experiences
-          </h3>
-          <div class="experience-main-list-div">
-            <div class="experience-list-parent">
-              <div class="experience-list-child">
-                <h3>Web Development</h3>
-                <p class="exp-year">2025</p>
+            <div class="about-content-right">
+              <div class="about-right-info-div">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h3>Based in Camarines Norte, Philippines</h3>
+                  <p>Open to remote opportunities worldwide in the future</p>
+                </div>
               </div>
-              <p class="exp-details">Currently starting at Web Development</p>
-            </div>
-            <div class="experience-list-parent">
-              <div class="experience-list-child">
-                <h3>LED Blink</h3>
-                <p class="exp-year">2024</p>
+              <div class="about-right-info-div">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <h3>Started Coding early</h3>
+                  <p>I started coding when I was 15 years old</p>
+                </div>
               </div>
-              <p class="exp-details">First Electronics Project</p>
-            </div>
-            <div class="experience-list-parent">
-              <div class="experience-list-child">
-                <h3>Hello World!</h3>
-                <p class="exp-year">2024</p>
+              <div class="about-right-info-div">
+                <i class="fas fa-book-open"></i>
+                <div>
+                  <h3>Lifelong Learner</h3>
+                  <p>Continuously expanding my technical toolkit</p>
+                </div>
               </div>
-              <p class="exp-details">Wrote my first line of code</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="skills-main-div" id="_Skills">
+        <div class="skills-content-div">
+          <h2 class="heading-txts">Skills</h2>
+          <div class="all-skills-div">
+            <div class="individual-skills-div">
+              <h3>Frontend</h3>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="individual-skills-div">
+              <h3>Embedded</h3>
+              <span>Arduino</span>
+              <span>C++</span>
+            </div>
+            <div class="individual-skills-div">
+              <h3>Tools</h3>
+              <span>GitHub</span>
+              <span>VScode</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects-main-section" id="_Projects">
+        <h2 class="heading-txts">Projects</h2>
+        <div class="projects-main-div">
+          <div class="projects-card-upper-div">
+            <div class="projects-cards-main-div">
+              <h1 class="project-title-txt">SeismoGuard Landing page</h1>
+              <p class="project-description">
+                Simple landing page for the SeismoGuard device. SeismoGuard is
+                an earthquake intensity meter device developed as our research
+                study and project.
+              </p>
+              <div class="project-stacks-div">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+              </div>
+              <a
+                href="https://lianvillacruel.github.io/seismoguard-landing-page/"
+                target="_blank"
+                class="view-proj-anchor-link"
+                ><img
+                  class="arrow-direct-img"
+                  src="Pictures/open_in_new_24dp_FF0000_FILL0_wght300_GRAD0_opsz24.svg"
+                />View Project</a
+              >
+            </div>
+            <div class="projects-cards-main-div">
+              <h1 class="project-title-txt">Project title</h1>
+              <p class="project-description">
+                This is a placeholder for my future projects. Future projects
+                are on the way — stay tuned as I continue building and
+                improving.
+              </p>
+              <div class="project-stacks-div">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+              </div>
+              <a href="" target="_blank" class="view-proj-anchor-link"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="projects-card-lower-div">
+            <div class="projects-cards-main-div">
+              <h1 class="project-title-txt">Project title</h1>
+              <p class="project-description">
+                This is a placeholder for my future projects. Future projects
+                are on the way — stay tuned as I continue building and
+                improving.
+              </p>
+              <div class="project-stacks-div">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+              </div>
+              <a href="" target="_blank" class="view-proj-anchor-link"
+                >View Project</a
+              >
+            </div>
+            <div class="projects-cards-main-div">
+              <h1 class="project-title-txt">Project title</h1>
+              <p class="project-description">
+                This is a placeholder for my future projects. Future projects
+                are on the way — stay tuned as I continue building and
+                improving.
+              </p>
+              <div class="project-stacks-div">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+              </div>
+              <a href="" target="_blank" class="view-proj-anchor-link"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="academics-section">
+        <h2 class="heading-txts">Academics</h2>
+      </section>
     </div>
-    <footer>
-      <p>
-        &copy; 2024 Lian Villacruel. All rights reserved. | Designed and
-        developed by Lian Villacruel
-      </p>
-    </footer>
 
     <script src="script.js"></script>
   </body>

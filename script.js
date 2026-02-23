@@ -1,3 +1,14 @@
 alert(
-  "This website is not an official portfolio, but a draft for my future portfolio. I am still working on it, I will make an final one in the future. Thank you for your understanding!",
+  "This website is not an official portfolio. Many elements are unfinished, I'am still at my learning era. Thank you for understanding!",
 );
+
+// Sidebar functions
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+
+  sidebar.style.display = "flex";
+}
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+}
