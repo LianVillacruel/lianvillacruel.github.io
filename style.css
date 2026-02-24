@@ -11,18 +11,20 @@ body {
 }
 /*======= Whole Page CSS =======*/
 .page {
-  max-width: 1000px; /* controls content width */
+  max-width: 1010px; /* controls content width */
   margin: 0 auto; /* centers content */
   padding: 0 0 0 0; /* space from screen edges */
   display: flex;
   flex-direction: column;
 }
+/* text per section */
 .heading-txts {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(18px, 5.5vw, 22px);
-  font-weight: 400;
-  color: red;
+  font-size: clamp(18px, 5.5vw, 20px);
+  font-weight: 100;
+  color: rgb(224, 0, 0);
   margin-bottom: 20px;
+  letter-spacing: 4px;
 }
 /*======= nav bar =======*/
 nav {
@@ -103,6 +105,7 @@ nav li:first-child {
 .hero-section {
   text-align: center;
   margin: 0 auto;
+  padding: 30px 0 0 0;
   max-width: 700px;
   height: 100vh;
   display: flex;
@@ -114,12 +117,14 @@ nav li:first-child {
 }
 .profile-pic {
   width: 160px;
+  height: 160px;
   border: solid 0.5px rgb(255, 47, 47);
   box-shadow: 0 10px 25px rgba(255, 20, 20, 0.296);
   border-radius: 50%;
   aspect-ratio: 1/1;
   object-fit: cover;
-  margin-bottom: 20px;
+  object-position: bottom;
+  margin-bottom: 30px;
 }
 .name-txt {
   font-size: clamp(50px, 5vw, 70px);
@@ -129,7 +134,7 @@ nav li:first-child {
   font-family: sans-serif;
   margin-bottom: 20px;
   letter-spacing: 2px;
-  color: rgb(215, 0, 0);
+  color: rgb(187, 0, 0);
 }
 .intro-txt {
   font-family: sans-serif;
@@ -162,6 +167,7 @@ nav li:first-child {
   cursor: pointer;
   background-color: rgb(160, 0, 0);
 }
+
 .get-touch-btn {
   font-family: sans-serif;
   font-size: 14px;
@@ -222,7 +228,7 @@ nav li:first-child {
 }
 .about-right-info-div p {
   font-size: clamp(11px, 5.5vw, 12px);
-  color: rgb(39, 39, 39);
+  color: rgb(94, 94, 94);
 }
 /* Skill div */
 .skills-main-div {
@@ -230,9 +236,8 @@ nav li:first-child {
   width: 95%;
 }
 .all-skills-div {
-  display: grid;
+  display: flex;
   margin-top: 20px;
-  grid-template-columns: repeat(3, 1fr);
 }
 .individual-skills-div {
   flex: 1;
@@ -246,6 +251,10 @@ nav li:first-child {
 .individual-skills-div span {
   color: rgb(97, 97, 97);
   font-size: clamp(11px, 5.5vw, 15px);
+}
+/* academics */
+.academics-section {
+  padding: 15vh 3%;
 }
 /* Projects part */
 .projects-main-section {
@@ -263,12 +272,18 @@ nav li:first-child {
   gap: 2%;
 }
 .projects-cards-main-div {
-  background-color: #fdfdfd;
+  background-color: #ffffff;
   flex: 1;
   padding: 20px;
   border-radius: 6px;
   border: solid 0.5px rgb(231, 231, 231);
+  transition: 0.2s;
+  height: 170px;
 }
+.projects-cards-main-div:hover {
+  box-shadow: 0 5px 5px rgba(189, 0, 0, 0.177);
+}
+
 .project-title-txt {
   font-size: clamp(16px, 5.5vw, 20px);
   margin-bottom: 18px;
@@ -277,7 +292,8 @@ nav li:first-child {
   font-size: clamp(9px, 5.5vw, 13px);
   line-height: 18px;
   letter-spacing: 1px;
-  color: rgb(42, 42, 42);
+  font-weight: 500;
+  color: rgb(88, 88, 88);
   margin-bottom: 10px;
 }
 .project-stacks-div {
@@ -305,9 +321,89 @@ nav li:first-child {
   font-size: clamp(11px, 5.5vw, 14px);
   align-items: center;
 }
-/* academics */
-.academics-section {
-  padding: 15vh 3%;
+/* Footer */
+footer {
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+}
+.footer-inner-div {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 15vh 5%;
+}
+.footer-first-p {
+  margin-top: 30px;
+  line-height: 25px;
+  font-size: clamp(15px, 5vw, 20px);
+  color: rgb(104, 104, 104);
+}
+.footer-second-p {
+  margin: 40px 0 20px 0;
+  color: rgb(215, 0, 0);
+  font-size: clamp(12px, 5vw, 15px);
+}
+.footer-fb-direct-btn {
+  padding: 10px 30px;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(210, 0, 0);
+  font-size: 15px;
+  border: none;
+  transition: 0.15s;
+}
+.footer-fb-direct i {
+  margin-right: 8px;
+}
+.footer-fb-direct-btn:hover {
+  background-color: rgb(255, 55, 55);
+  cursor: pointer;
+}
+.footer-other-links-div {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-other-links-div h2 {
+  font-size: 15px;
+  color: rgb(160, 0, 0);
+  border-bottom: solid 0.5px rgb(160, 0, 0);
+  width: 160px;
+  margin: 0 auto;
+  padding-bottom: 8px;
+}
+.other-links-div {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 15px;
+}
+.footer-other-links-div a {
+  font-size: 22px;
+  color: rgb(98, 98, 98);
+}
+.footer-other-links-div a:hover {
+  color: red;
+}
+.copyright-div {
+  padding: 4vh 10%;
+  background-color: rgb(248, 248, 248);
+  border-top: solid 0.5px rgb(232, 232, 232);
+}
+.copyright-div-content {
+  display: flex;
+  justify-content: space-between;
+}
+.copyright-div-content p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: rgb(111, 111, 111);
+}
+.copyright-div-content a {
+  text-decoration: none;
+  color: rgb(111, 111, 111);
+}
+.copyright-div-content a:hover {
+  color: red;
 }
 /*======== Responsiveness =======*/
 @media (max-width: 760px) {
@@ -329,5 +425,13 @@ nav li:first-child {
   .projects-card-lower-div {
     flex-direction: column;
     gap: 20px;
+  }
+  .all-skills-div {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .copyright-div-content {
+    flex-direction: column;
+    gap: 25px;
   }
 }

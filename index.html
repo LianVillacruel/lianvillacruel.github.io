@@ -25,11 +25,12 @@
               src="/Pictures/arrow_forward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
           /></a>
         </li>
-        <li><a href="#">Home</a></li>
+
         <li><a href="#_About">About</a></li>
         <li><a href="#_Skills">Skills</a></li>
+        <li><a href="#">Academics</a></li>
         <li><a href="#_Projects">Projects</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="#_Contact">Contacts</a></li>
       </ul>
       <ul>
         <li>
@@ -37,9 +38,9 @@
         </li>
         <li class="hideOnMobile"><a href="#_About">About</a></li>
         <li class="hideOnMobile"><a href="#_Skills">Skills</a></li>
-        <li class="hideOnMobile"><a href="#_Projects">Projects</a></li>
         <li class="hideOnMobile"><a href="#">Academics</a></li>
-        <li class="hideOnMobile"><a href="#">Contacts</a></li>
+        <li class="hideOnMobile"><a href="#_Projects">Projects</a></li>
+        <li class="hideOnMobile"><a href="#_Contact">Contacts</a></li>
         <li onclick="showSidebar()" class="menu-btn">
           <a
             ><img
@@ -51,10 +52,13 @@
     <div class="page">
       <div class="hero-section">
         <div class="hero-content">
-          <img
-            class="profile-pic"
-            src="Pictures/831673b3-a6ed-4dee-b509-2a6d5c912b7d-removebg-preview.png"
-          />
+          <div class="profile-pic-div">
+            <img
+              class="profile-pic"
+              src="Pictures/b1bf98d5-f135-4bb6-81fd-cb0c5ba38a57.jpg"
+            />
+          </div>
+
           <p class="role-txt">Aspiring Web Developer / Arduino Robotics</p>
           <h1 class="name-txt">Lian Villacruel</h1>
           <p class="intro-txt">
@@ -65,7 +69,9 @@
             <a href="#_Projects"
               ><button class="view-project-btn">View Projects</button></a
             >
-            <button class="get-touch-btn">Get in Touch</button>
+            <a href="#_Contact"
+              ><button class="get-touch-btn">Get in Touch</button></a
+            >
           </div>
         </div>
       </div>
@@ -103,7 +109,7 @@
                 <i class="fas fa-briefcase"></i>
                 <div>
                   <h3>Started Coding early</h3>
-                  <p>I started coding when I was 15 years old</p>
+                  <p>I started coding when I was 15</p>
                 </div>
               </div>
               <div class="about-right-info-div">
@@ -139,6 +145,9 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="academics-section">
+        <h2 class="heading-txts">Academics</h2>
       </section>
       <section class="projects-main-section" id="_Projects">
         <h2 class="heading-txts">Projects</h2>
@@ -179,7 +188,10 @@
                 <span>Javascript</span>
               </div>
               <a href="" target="_blank" class="view-proj-anchor-link"
-                >View Project</a
+                ><img
+                  class="arrow-direct-img"
+                  src="Pictures/open_in_new_24dp_FF0000_FILL0_wght300_GRAD0_opsz24.svg"
+                />View Project</a
               >
             </div>
           </div>
@@ -197,7 +209,10 @@
                 <span>Javascript</span>
               </div>
               <a href="" target="_blank" class="view-proj-anchor-link"
-                >View Project</a
+                ><img
+                  class="arrow-direct-img"
+                  src="Pictures/open_in_new_24dp_FF0000_FILL0_wght300_GRAD0_opsz24.svg"
+                />View Project</a
               >
             </div>
             <div class="projects-cards-main-div">
@@ -213,16 +228,57 @@
                 <span>Javascript</span>
               </div>
               <a href="" target="_blank" class="view-proj-anchor-link"
-                >View Project</a
+                ><img
+                  class="arrow-direct-img"
+                  src="Pictures/open_in_new_24dp_FF0000_FILL0_wght300_GRAD0_opsz24.svg"
+                />View Project</a
               >
             </div>
           </div>
         </div>
       </section>
-      <section class="academics-section">
-        <h2 class="heading-txts">Academics</h2>
-      </section>
     </div>
+    <footer id="_Contact">
+      <div class="footer-inner-div">
+        <h2 class="heading-txts">CONTACT</h2>
+        <p class="footer-first-p">
+          I'm currently building my skills in web development and Arduino
+          robotics. If you'd like to connect, share advice, or follow my
+          progress, feel free to reach out.
+        </p>
+        <p class="footer-second-p">
+          I'am mostly active in Facebook, so you can direct to my Facebook
+          account below.
+        </p>
+        <a
+          class="footer-fb-direct"
+          href="https://www.facebook.com/lian.lian.238204"
+          target="_blank"
+        >
+          <button class="footer-fb-direct-btn">
+            <i class="fab fa-facebook"></i>Facebook
+          </button>
+        </a>
+
+        <div class="footer-other-links-div">
+          <h2>Other links</h2>
+          <div class="other-links-div">
+            <a href="https://github.com/LianVillacruel"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.tiktok.com/@_iyanokai?lang=en"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-div">
+        <div class="copyright-div-content">
+          <p>&copy; Lian Villacruel.All rights reserved.</p>
+          <a href="#">Back to top</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
