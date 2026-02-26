@@ -99,7 +99,20 @@ nav li:first-child {
 .name-logo span {
   color: red;
 }
-
+.hero-section,
+.about-main-div,
+.skills-main-div,
+.academics-section,
+.projects-main-section {
+  padding: 15vh 3%;
+}
+.about-content,
+.skills-content-div,
+.academics-content-div,
+.projects-main-div {
+  max-width: 1050px;
+  margin: 0 auto;
+}
 /* Hero section */
 .hero-section {
   text-align: center;
@@ -430,7 +443,7 @@ footer {
     gap: 40px;
   }
   .copyright-div-content {
-    flex-direction: column;
-    gap: 25px;
+    flex-direction: column-reverse;
+    gap: 30px;
   }
 }
